@@ -7,19 +7,110 @@
     <link rel="stylesheet" href="music.css">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="homepage.html" title="view my homepage"> Home</a> </li>
+            <li><a href="/bio&skills/bio.html" title="view my bio"> Bio</a> </li>
+            <li><a href="/bio&skills/skills.html" title="view my skills">Skills</a> </li>
+            <li><a href="photogallery.html" title="my photo gallery">Photo Gallery</a> </li>
+            <li><a href="music.html" title="my music taste">Music</a> </li>
+            <li><a href="film.html" title="my film taste">Film</a> </li>
+            
+        </ul>
+        </nav>
     <header>
         <h1>Music Collection</h1>
     </header>
-    <main>
-        <section>
-            <h2>International Artists</h2>
-            <ul>
-                <li><a href="https://www.youtube.com/results?search_query=Eminem+album+track">Eminem Album</a></li>
-                <li><a href="https://www.youtube.com/results?search_query=Kendrick+Lamar+album+track">Kendrick Lamar Album</a></li>
-                <li><a href="https://www.youtube.com/results?search_query=Ice+Cube+album+track">Ice Cube Album</a></li>
-            </ul>
+    <main class="site-main">
+        <section class="genre-section pop">
+            <h2><i class="fa-solid fa-music"></i> Pop</h2>
+            <div class="music-grid">
+                <div class="music-card">
+                    <h3>Without Me</h3>
+                    <p>Eminem</p>
+                    <audio controls>
+                        <source src="../medias/Popular From Wicked The Soundtrack.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="music-card">
+                    <h3>Humble</h3>
+                    <p>Kendrick Lamar</p>
+                    <audio controls>
+                        <source src="../medias/Laufey - From The Start Official Music Video.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="music-card">
+                    <h3>It Was a Good Day</h3>
+                    <p>Ice Cube</p>
+                    <audio controls>
+                        <source src="../medias/Taylor Swift - Cruel Summer Official Audio.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Local Artists</h2>
-            <ul>
-                <li><a href="https://www.youtube.com/results?search_query=Shanti+Dope">Shanti Dope
+
+        <section class="genre-section hip-hop">
+            <h2><i class="fa-solid fa-microphone-lines"></i> Hip-Hop</h2>
+            <div class="music-grid">
+                <div class="music-card">
+                    <h3>Empire State Of Mind</h3>
+                    <p>JAY-Z ft. Alicia Keys
+                    </p>
+                    <audio controls>
+                        <source src="../medias/Popular From Wicked The Soundtrack.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="music-card">
+                    <h3>hOUDINI</h3>
+                    <p>Eminem</p>
+                    <audio controls>
+                        <source src="../medias/Popular From Wicked The Soundtrack.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="music-card">
+                    <h3>Not Like Us</h3>
+                    <p>Kendrick Lamar</p>
+                    <audio controls>
+                        <source src="../medias/Popular From Wicked The Soundtrack.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        <section class="genre-section rock">
+            <h2><i class="fa-solid fa-guitar"></i> Rock</h2>
+            <div class="music-grid">
+                <div class="music-card">
+                    <h3>We Belong Together</h3>
+                    <p>Mariah Carey</p>
+                    <audio controls>
+                        <source src="../medias/Popular From Wicked The Soundtrack.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="music-card">
+                    <h3>Dilemma</h3>
+                    <p>Nelly</p>
+                    <audio controls>
+                        <source src="../medias/Popular From Wicked The Soundtrack.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="music-card">
+                    <h3>Love Don't Change</h3>
+                    <p>Jeremih</p>
+                    <audio controls>
+                        <source src="../medias/Popular From Wicked The Soundtrack.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="back-button">
+            <a href="../index.html"><i class="fa-solid fa-house"></i> Home</a>
+        </div>
+    </footer>
+
+
+</body>
+</html>

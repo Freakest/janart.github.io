@@ -44,3 +44,158 @@ body {
   nav a:hover {
     background-color: gray;
   }
+
+  /* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+.site-header {
+  background-color: #1e272e; /* Dark background */
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.site-header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.site-main {
+  padding: 2rem;
+}
+
+.genre-section {
+  margin-bottom: 4rem;
+  padding: 2.5rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.genre-section h2 {
+  font-size: 2.2rem;
+  color: #555;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.music-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+.music-card {
+  background-color: #fefefe;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.music-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+/*.album-cover { /* Removed album cover styles */
+/* width: 150px;*/
+/* height: 150px;*/
+/* object-fit: cover;*/
+/* border-radius: 50%;*/
+/* margin-bottom: 1rem;*/
+/* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
+/*}*/
+
+.music-card h3 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.music-card p {
+  font-size: 1.1rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.music-card audio {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  background-color: #1e272e;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.back-button a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  background-color: #3498db;
+  transition: background-color 0.3s ease;
+}
+
+.back-button a:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .site-header h1 {
+      font-size: 2.2rem;
+  }
+
+  .genre-section h2 {
+      font-size: 1.8rem;
+  }
+
+  .music-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .music-card {
+      padding: 1rem;
+  }
+
+  /*.album-cover { /* Removed responsive album cover styles */
+  /* width: 120px;*/
+  /* height: 120px;*/
+  /*}*/
+
+  .music-card h3 {
+      font-size: 1.4rem;
+  }
+
+  .music-card p {
+      font-size: 1rem;
+  }
+}
