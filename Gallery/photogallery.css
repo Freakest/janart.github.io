@@ -102,3 +102,25 @@ body {
 .gallery-item:hover .overlay {
     opacity: 1;
 }
+
+.back-button {
+  text-align: center;
+  padding: 1rem 0;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.back-button a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background-color: #3498db;
+  transition: background-color 0.3s ease;
+}
+
+.back-button a:hover {
+  background-color: #2980b9;
+}
