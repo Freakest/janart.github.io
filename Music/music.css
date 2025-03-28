@@ -1,61 +1,83 @@
 body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color: gray; 
-    margin: 0;
-    color: #FFFFFF; 
-    line-height: 1.6;
-  }
-  
-  nav {
-    background-color: skyblue; 
-    color: #ffffff; 
-    padding: 20px 0;
-    border-bottom: 1.5px solid #EEEEEE;
-  }
-  
-  .nav-container {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 5px;
-    margin: 7px;
-    display: flex;
-  }
-  
-  nav li {
-    margin: 0 15px;
-  }
-  
-  nav a {
-    color: black; 
-    text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  nav a:hover {
-    background-color: gray;
-  }
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: black;
+  line-height: 1.6;
+}
+
+nav {
+  background-color: #5a5a5a;
+  color: purple;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee; 
+}
+
+.nav-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: #fffdd0;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #f0f0f0; /* Lighter gray hover */
+  color: black;
+}
+
+.nav-buttons a {
+  margin-left: 10px;
+}
+
+.login-button {
+  background: none;
+  border: none;
+  color: #666; /* Slightly darker gray for "Log in" */
+}
+
+.trial-button {
+  background-color: #5a5a5a; /* Primary blue */
+  color: white;
+  border: none;
+  font-weight: bold; /* Keep font weight */
+}
 
   /* General Styles */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
-  background-color: #f8f8f8;
+  background-color: #fffdd0;
   color: #333;
   line-height: 1.6;
 }
 
+h1 {
+  text-align: center;
+}
+
 .site-header {
-  background-color: #1e272e; /* Dark background */
+  background-color: #5a5a5a; /* Dark background */
   color: #fff;
   padding: 2rem 0;
   text-align: center;
@@ -75,7 +97,7 @@ body {
 .genre-section {
   margin-bottom: 4rem;
   padding: 2.5rem;
-  background-color: #fff;
+  background-color: #fffdd0;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
@@ -100,7 +122,7 @@ body {
 }
 
 .music-card {
-  background-color: #fefefe;
+  background-color: #5a5a5a;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
@@ -128,14 +150,14 @@ body {
 
 .music-card h3 {
   font-size: 1.6rem;
-  color: #333;
+  color: #fffdd0;
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
 .music-card p {
   font-size: 1.1rem;
-  color: #777;
+  color: #fffdd0;
   margin-bottom: 1rem;
 }
 
