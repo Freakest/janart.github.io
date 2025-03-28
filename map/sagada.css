@@ -1,0 +1,123 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffdd0;
+    color: black;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #5a5a5a;
+    color: purple;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee; 
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fffdd0;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #f0f0f0; /* Lighter gray hover */
+    color: black;
+}
+
+.nav-buttons a {
+    margin-left: 10px;
+}
+
+.login-button {
+    background: none;
+    border: none;
+    color: #666; /* Slightly darker gray for "Log in" */
+}
+
+.trial-button {
+    background-color: #5a5a5a; /* Primary blue */
+    color: white;
+    border: none;
+    font-weight: bold; /* Keep font weight */
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(201, 65, 194);
+    border-radius: 8px;
+    max-width: fit-content;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: larger; 
+}
+
+.gallery-item {
+    width: calc(20% - 15px);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    display: flex; /* Use flexbox to center the image */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.gallery-item img {
+    display: block;
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    max-height: 100%; /* Ensure image doesn't exceed container height */
+    object-fit: contain; /* Scale down the image to fit within the container */
+    transition: transform 0.3s ease-in-out;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 500%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
