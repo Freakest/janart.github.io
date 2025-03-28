@@ -64,15 +64,24 @@ nav a:hover {
     font-weight: bold; /* Keep font weight */
 }
 
-.gallery-container {
+.image-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
     justify-content: center;
     padding: 20px;
-    background-color: rgb(201, 65, 194);
+    background-color: #5a5a5a;
     border-radius: 8px;
     max-width: fit-content;
+}
+
+.image-container img {
+    width: auto; /* Or a specific width like 800px if you want it larger initially */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    max-width: 800px; /* Increase the maximum width if needed */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Or cover, depending on your desired effect */
 }
 
 /* If you also want to increase the font size of headings */
@@ -85,35 +94,3 @@ li{
   font-size: 16px;
 }
 
-.gallery-item {
-    display: inline-block;
-    border: 1px solid #ddd;
-    background-color: #f4f4f4;
-    color: black; 
-    width: 100px;
-    height: 100px;
-    justify-content: center; 
-    align-items: center;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 500%;
-    height: 500%;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    padding: 10px;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.gallery-item:hover .overlay {
-    opacity: 1;
-}

@@ -1,14 +1,78 @@
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color: gray;
-    color: #333;
+    background-color: #fffdd0;
+    color: black;
     margin: 0;
-    padding: 20px;
-    display: flex; 
+    padding: 0;
     justify-content: center;
     align-items: center;
     min-height: 100vh; 
+    line-height: 1.6;
+    min-height: 100vh;
+    line-height: 1.6;
+    display: flex; /* Add this to make body a flex container */
+    flex-direction: column; /* Optional: to stack body content vertically */
+    justify-content: center; /* Center content horizontally in flex container */
+    align-items: center; /* Center content vertically in flex container */
 }
+  
+  nav {
+    background-color: #5a5a5a;
+    color: purple;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee; 
+    width: 100%;
+  }
+  
+  .nav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 15px;
+  }
+  
+  nav a {
+    color: #fffdd0;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #f0f0f0; /* Lighter gray hover */
+    color: black;
+  }
+  
+  .nav-buttons a {
+    margin-left: 10px;
+  }
+  
+  .login-button {
+    background: none;
+    border: none;
+    color: #666; /* Slightly darker gray for "Log in" */
+  }
+  
+  .trial-button {
+    background-color: #5a5a5a; /* Primary blue */
+    color: white;
+    border: none;
+    font-weight: bold; /* Keep font weight */
+  }
 
 .container {
     width: 800px; 
@@ -16,6 +80,7 @@ body {
     padding: 30px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     border-radius: 12px;
+    margin: 20px auto; /* Center the container */
 }
 
 h1 {
