@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Information Form</title>
+<style>
+  body {
+    font-family: sans-serif;
+  }
+  .container {
+    width: 450px;
+    border: 5px solid navy;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+  }
+  .header {
+    background-color: #ADD8E6; 
+    color: #000;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .form-row {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #b6ff97; 
+  padding-bottom: 10px; 
+}
+  .label {
+    width: 150px;
+    text-align: left;
+    padding-right: 10px;
+  }
+  input[type="text"],
+  select {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .radio-group label {
+    margin-right: 15px;
+  }
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    min-height: 80px;
+  }
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  button {
+    background-color: #ADD8E6; /* Light Blue */
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  button:hover {
+    background-color: #87CEEB; /* Sky Blue */
+  }
+</style>
+</head>
+<body style="color: navy;">
+
+  <div class="container">
+    <div class="header">
+      Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Value
+    </div>
+
+    <div class="form-row">
+      <label for="name" class="label">Name:</label>
+      <input type="text" id="name" placeholder="Type your name here">
+    </div>
+
+    <div class="form-row">
+      <label class="label">Sex:</label>
+      <div class="radio-group">
+        <input type="radio" id="male" name="sex" value="male" checked>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="sex" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="sex" value="other">
+        <label for="other">Other</label>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <label for="eyeColor" class="label">Eye Color</label>
+      <select id="eyeColor">
+        <option value="black">black</option>
+        <option value="blue">blue</option>
+        <option value="brown">brown</option>
+        <option value="green">green</option>
+        <option value="hazel">hazel</option>
+      </select>
+    </div>
+
+    <div class="form-row">
+      <label class="label">Check all that Applies</label>
+      <div>
+        <input type="checkbox" id="tall" name="attributes" value="tall">
+        <label for="tall">Over 6ft. Tall</label><br>
+        <input type="checkbox" id="heavy" name="attributes" value="heavy">
+        <label for="heavy">Over 200 pounds</label><br>
+        <input type="checkbox" id="light" name="attributes" value="light">
+        <label for="light">Less than 200 pounds</label>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <label for="athleticAbility" class="label">Describe your athletic ability</label>
+      <textarea id="athleticAbility"></textarea>
+    </div>
+
+    <div class="button-container">
+      <button type="submit">Enter my Information</button>
+    </div>
+  </div>
+
+</body>
+</html>

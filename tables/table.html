@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabular Data</title>
+    <style>
+
+    body {
+    display: flex; /* Enable flexbox on the body */
+    justify-content: center; /* Center content horizontally */
+    align-items: flex-start; /* Align items to the top (default behavior for tables) */
+    margin: 0; /* Remove default body margin */
+    min-height: 100vh; /* Ensure body takes at least the viewport height */
+  }
+       table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #374785;
+    color: white;
+  }
+  tr:nth-child(2),
+  tr:nth-child(3) {
+    background-color: #A5D6A7;
+  }
+  tr:nth-child(4),
+  tr:nth-child(6),
+  tr:nth-child(😎 {
+    background-color: #F0F8E0;
+  }
+  tr:last-child {
+    background-color: #374785;
+    color: white;
+    font-weight: bold;
+  }
+  td:nth-child(3),
+  td:last-child {
+    text-align: right;
+  }
+</style>
+</head>
+<body>
+
+  <table>
+    <tr>
+        <th colspan="4" style="text-align: center; padding: 30px;">Invoice Tabular Data</th>
+    </tr>
+        <tr>
+            <th colspan="3">Invoice #123456788</th>
+            <th style="text-align: right;">14 January 2025</th>
+        </tr>
+        
+        <tr>
+            <td colspan="2">
+              <strong>Pay to:</strong><br>
+              Acme Billing Co.<br>
+              123 Main St.<br>
+              Cityville, NA 12345
+            </td>
+            <td colspan="2">
+              <strong>Customer:</strong><br>
+              John Smith<br>
+              321 Willow Way<br>
+              Southeast Northwesternshire, MA 54321
+            </td>
+          </tr>
+
+      <tr>
+        <th>Name / Description</th>
+        <th> Qty.</th>
+        <th> @</th>
+        <th style="text-align: right;">Cost</th>
+      </tr>
+      <tr>
+        <td>Paperclips</td>
+        <td>1000</td>
+        <td>0.01</td>
+        <td style="text-align: right;">10.00</td>
+      </tr>
+      <tr>
+        <td>Staples (box)</td>
+        <td>100</td>
+        <td>1.00</td>
+        <td style="text-align: right;">100.00</td>
+      </tr>
+      <tr>
+        <td>Bond Paper (box)</td>
+        <td>100</td>
+        <td>1.00</td>
+        <td style="text-align: right;">110.00</td>
+      </tr>
+    <tr>
+      <td colspan="3" style="font-weight: bold;">Subtotal</td>
+      <td style="text-align: right; font-weight: bold;">110.00</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Tax</td>
+      <td colspan="2" style="text-align: right;">8%</td>
+      <td style="text-align: right; font-weight: bold;">8.80</td>
+    </tr>
+    <tr>
+        <th colspan="3" style="font-weight: bold;">Grand Total</th>
+        <th style="text-align: right;">$118.80</th>
+    </tr>
+  </table>
+
+</body>
+</html>
